@@ -377,7 +377,7 @@ void I_Error (char *error, ...)
 
     // Message first.
     va_start(argptr, error);
-    //fprintf(stderr, "\nError: ");
+    fprintf(stderr, "\nError: ");
     vfprintf(stderr, error, argptr);
     fprintf(stderr, "\n\n");
     va_end(argptr);
@@ -456,7 +456,7 @@ void I_Error (char *error, ...)
 
 #else
     {
-        ZenityErrorBox(msgbuf);
+        //ZenityErrorBox(msgbuf);
     }
 #endif
 
